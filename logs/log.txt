@@ -1,0 +1,172 @@
+Thu Mar  9 14:05:49 2023
+Launch
+Thu Mar  9 14:05:53 2023
+Exited
+Thu Mar  9 14:07:52 2023
+Homed all axes
+Thu Mar  9 14:07:52 2023
+Launch
+Thu Mar  9 14:07:55 2023
+Exited
+Thu Mar  9 14:08:19 2023
+Homed all axes
+Thu Mar  9 14:08:19 2023
+Launch
+Thu Mar  9 14:11:37 2023
+Launch
+Thu Mar  9 14:11:46 2023
+Homed all axes
+Thu Mar  9 14:11:50 2023
+Exited
+Thu Mar  9 14:14:49 2023
+Launch
+Thu Mar  9 14:14:50 2023
+Launch
+Thu Mar  9 15:09:34 2023
+Launch
+Thu Mar  9 15:09:41 2023
+Homed all axes
+Thu Mar  9 17:01:47 2023
+Launch
+Thu Mar  9 17:01:50 2023
+Exit
+Thu Mar  9 17:01:55 2023
+Launch
+Thu Mar  9 17:01:58 2023
+Homed all axes
+Thu Mar  9 17:02:01 2023
+Exit
+Thu Mar  9 17:25:21 2023
+Launch
+Thu Mar  9 17:25:39 2023
+Homed all axes
+Thu Mar  9 17:27:38 2023
+Exit
+Thu Mar  9 17:31:41 2023
+Launch
+Thu Mar  9 17:31:45 2023
+Homed all axes
+Thu Mar  9 17:31:48 2023
+Exit
+Thu Mar  9 17:39:18 2023
+Launch
+Thu Mar  9 17:39:21 2023
+Homed all axes
+Thu Mar  9 17:39:21 2023
+Homed all axes
+Thu Mar  9 17:39:59 2023
+Exit
+Thu Mar  9 18:25:25 2023
+Launch
+Thu Mar  9 18:25:58 2023
+Help command
+Thu Mar  9 18:26:29 2023
+Exit
+Thu Mar  9 20:18:36 2023
+Launch
+Thu Mar  9 20:18:42 2023
+Help command
+Thu Mar  9 20:18:47 2023
+Homed all axes
+Thu Mar  9 20:18:47 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:18:47 2023
+New move: 50 50 10
+Thu Mar  9 20:18:47 2023
+Switching to relative system of coordinates
+Thu Mar  9 20:18:47 2023
+New move: 50 - -
+Thu Mar  9 20:18:47 2023
+New move: - 50 -
+Thu Mar  9 20:18:47 2023
+New move: 0 - -
+Thu Mar  9 20:18:47 2023
+New move: - 0 -
+Thu Mar  9 20:18:51 2023
+Exit
+Thu Mar  9 20:43:03 2023
+Launch
+Thu Mar  9 20:43:12 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:43:12 2023
+New move: - - 10
+Thu Mar  9 20:43:12 2023
+Switching to relative system of coordinates
+Thu Mar  9 20:43:12 2023
+New move: - - -10
+Thu Mar  9 20:43:12 2023
+New move: - -20 -
+Thu Mar  9 20:43:12 2023
+New move: 10 - -
+Thu Mar  9 20:43:12 2023
+New move: - - 10
+Thu Mar  9 20:43:12 2023
+New move: 2 20 -
+Thu Mar  9 20:43:12 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:43:20 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:43:20 2023
+New move: - - 10
+Thu Mar  9 20:43:20 2023
+Switching to relative system of coordinates
+Thu Mar  9 20:43:20 2023
+New move: - - -10
+Thu Mar  9 20:43:20 2023
+New move: - -20 -
+Thu Mar  9 20:43:20 2023
+New move: 10 - -
+Thu Mar  9 20:43:20 2023
+New move: - - 10
+Thu Mar  9 20:43:20 2023
+New move: 2 20 -
+Thu Mar  9 20:43:20 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:43:34 2023
+Exit
+Thu Mar  9 20:45:51 2023
+Launch
+Thu Mar  9 20:46:02 2023
+Homed all axes
+Thu Mar  9 20:46:02 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:46:02 2023
+New move: 100 100 10
+Thu Mar  9 20:46:06 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:46:06 2023
+New move: - - 10
+Thu Mar  9 20:46:06 2023
+Switching to relative system of coordinates
+Thu Mar  9 20:46:06 2023
+New move: - - -10
+Thu Mar  9 20:46:06 2023
+New move: - -20 -
+Thu Mar  9 20:46:06 2023
+New move: 10 - -
+Thu Mar  9 20:46:06 2023
+New move: - - 10
+Thu Mar  9 20:46:06 2023
+New move: 2 20 -
+Thu Mar  9 20:46:06 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:46:11 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:46:11 2023
+New move: - - 10
+Thu Mar  9 20:46:11 2023
+Switching to relative system of coordinates
+Thu Mar  9 20:46:11 2023
+New move: - - -10
+Thu Mar  9 20:46:11 2023
+New move: - -20 -
+Thu Mar  9 20:46:11 2023
+New move: 10 - -
+Thu Mar  9 20:46:11 2023
+New move: - - 10
+Thu Mar  9 20:46:11 2023
+New move: 2 20 -
+Thu Mar  9 20:46:11 2023
+Switching to absolute system of coordinates
+Thu Mar  9 20:46:14 2023
+Exit
