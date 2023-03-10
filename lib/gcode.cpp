@@ -3,6 +3,8 @@
 #include <fstream>
 using namespace std;
 
+void DrawSegment(int n);
+
 void AddCommand(string command, string x = "", string y = "", string z = "")	// Adding a command to output file
 {
 	ofstream fout;
@@ -75,148 +77,171 @@ void DrawLetter(char l)
 
 	if(l == 'a')
 	{
-		AddCommand("move", "-", "-", "-10");		// moving down to start writing
-
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "-", "20", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "-10", "10", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "10", "-", "-");
-
-		AddCommand("move", "-", "-", "10");			// moving up to stop writing
-		AddCommand("move", "5", "10", "-");			// relocating to a new letter
+		DrawSegment(5);
+		DrawSegment(6);
+		DrawSegment(1);
+		DrawSegment(2);
+		DrawSegment(3);
+		DrawSegment(7);
+		DrawSegment(0);
 	}
 
 	else if(l == 'b')
 	{
-		AddCommand("move", "-", "-", "-10");		// moving down to start writing
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "10", "-");
-		AddCommand("move", "-10", "-", "-");
-		AddCommand("move", "-", "-", "10");			// moving up to stop writing
-		AddCommand("move", "15", "10", "-");		// relocating to a new letter
+		DrawSegment(6);
+		DrawSegment(5);
+		DrawSegment(7);
+		DrawSegment(3);
+		DrawSegment(4);
+		DrawSegment(0);
 	}
 
 	else if(l == 'c')
 	{
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-10", "-", "-");
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "20", "-");
+		DrawSegment(7);
+		DrawSegment(5);
+		DrawSegment(4);
+		DrawSegment(0);
 	}
 
 	else if(l == 'd')
 	{
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-10", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-10", "-", "-");
-		AddCommand("move", "-", "-10", "-");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "20", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "-", "-");
+		DrawSegment(2);
+		DrawSegment(3);
+		DrawSegment(4);
+		DrawSegment(5);
+		DrawSegment(7);
+		DrawSegment(0);
 	}
 
 	else if(l == 'e')
 	{
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "-10", "10", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "-10", "10", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "-", "-");
+		DrawSegment(1);
+		DrawSegment(2);
+		DrawSegment(6);
+		DrawSegment(7);
+		DrawSegment(5);
+		DrawSegment(4);
+		DrawSegment(0);
 	}
 
 	else if(l == 'h')
 	{
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "-", "10", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "-", "-10", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-", "20", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "-", "-");
+		DrawSegment(6);
+		DrawSegment(5);
+		DrawSegment(7);
+		DrawSegment(3);
+		DrawSegment(0);
 	}
 
 	else if(l == 'l')
 	{
-		AddCommand("move", "-", "-", "-10");		// moving down to start writing
-
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "10", "-", "-");
-
-		AddCommand("move", "-", "-", "10");			// moving up to stop writing
-		AddCommand("move", "5", "20", "-");			// relocating to a new letter
+		DrawSegment(6);
+		DrawSegment(5);
+		DrawSegment(0);
 	}
 
 	else if(l == 'o')
 	{
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-10", "-", "-");
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "20", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "-", "-");
+		DrawSegment(5);
+		DrawSegment(7);
+		DrawSegment(3);
+		DrawSegment(4);
+		DrawSegment(0);
 	}
 
 	else if(l == 'w')
 	{
-		AddCommand("move", "-", "-10", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-", "-10", "-");
-		AddCommand("move", "10", "-", "-");
-
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "-5", "-", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-", "10", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "-10", "-");
-		AddCommand("move", "-", "-", "-10");
-
-		AddCommand("move", "-", "10", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "10", "-");
+		DrawSegment(3);
+		DrawSegment(4);
+		DrawSegment(5);
+		DrawSegment(0);
 	}
 
 	else if(l == 'r')
 	{
-		AddCommand("move", "-", "-20", "-");
-		AddCommand("move", "-", "-", "-10");
-		AddCommand("move", "-", "10", "-");
-		AddCommand("move", "10", "-", "-");
-		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "5", "10", "-");
+		DrawSegment(5);
+		DrawSegment(7);
+		DrawSegment(0);
 	}
 
 	else if (l == '-')		// for making a space
 	{
-		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "2.5", "-", "-");
 	}
 
 	AddCommand("absolute");
+}
+
+void DrawSegment(int n)
+{
+	// Starts at z=10
+	// 5x10 letters should do it...
+	AddCommand("absolute");
+	AddCommand("move", "-", "-", "10");
+	AddCommand("relative");
+
+	if(n == 1)
+	{
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "5", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-5", "-", "-");
+	}
+	else if(n == 2)
+	{
+		AddCommand("move", "5", "-", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "-5", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-", "5", "-");
+		AddCommand("move", "-5", "-", "-");
+	}
+	else if(n == 3)
+	{
+		AddCommand("move", "5", "-5", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "-5", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-5", "10", "-");
+	}
+	else if(n == 4)
+	{
+		AddCommand("move", "5", "-10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-5", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-", "10", "-");
+	}
+	else if(n == 5)
+	{
+		AddCommand("move", "-", "-5", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "-5", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-", "10", "-");
+	}
+	else if(n == 6)
+	{
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "-5", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-", "5", "-");
+	}
+	else if(n == 7)
+	{
+		AddCommand("move", "-", "-5", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "5", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-5", "5", "-");
+	}
+	else if(n == 0)
+	{
+		AddCommand("move", "7.5", "-", "-");
+
+	}
+
+	AddCommand("absolute");
+
 }

@@ -62,7 +62,7 @@ void CommandLine()											// For command input
 			AddCommand("home");
 			AddCommand("absolute");
 			AddCommand("move", "-", "-", "10");
-			AddCommand("move", "100", "150", "-");
+			AddCommand("move", "100", "130", "-");
 
 			cout << "Generating complete!" << endl;
 		}
