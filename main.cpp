@@ -19,7 +19,7 @@ int main()
 
 void Greeting()												// Greets the user, shows current version etc
 {
-	string version = "alpha 0.0";
+	string version = "alpha 0.1";
 	cout << "You are using 3D Printer Draw, version " << version << endl;
 	cout << "Type \"-help\" for available commands" << endl;
 }
@@ -61,7 +61,8 @@ void CommandLine()											// For command input
 			cout << "Generating a testfile..." << endl;
 			AddCommand("home");
 			AddCommand("absolute");
-			AddCommand("move", "100", "100", "10");
+			AddCommand("move", "-", "-", "10");
+			AddCommand("move", "100", "150", "-");
 
 			cout << "Generating complete!" << endl;
 		}

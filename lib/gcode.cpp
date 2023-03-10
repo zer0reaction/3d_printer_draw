@@ -65,17 +65,157 @@ void DrawLetter(char l)
 
 	// Starting point of the letter is in the top left corner
 	// All the letters are 20x10 mm in size
-	// Spacing between letters is added automatically
+	// Spacing between letters is added automatically (5mm)
 	// This code assumes that z is 10mm up before running
 	// x is left-right
 	// y is up-down
-	if(l == 'l')
+
+	// LETTERS TO ADD:
+	// FGHIJKLMNOPQRSUVWXYZ
+
+	if(l == 'a')
+	{
+		AddCommand("move", "-", "-", "-10");		// moving down to start writing
+
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-", "20", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-10", "10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "10", "-", "-");
+
+		AddCommand("move", "-", "-", "10");			// moving up to stop writing
+		AddCommand("move", "5", "10", "-");			// relocating to a new letter
+	}
+
+	else if(l == 'b')
+	{
+		AddCommand("move", "-", "-", "-10");		// moving down to start writing
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "10", "-");
+		AddCommand("move", "-10", "-", "-");
+		AddCommand("move", "-", "-", "10");			// moving up to stop writing
+		AddCommand("move", "15", "10", "-");		// relocating to a new letter
+	}
+
+	else if(l == 'c')
+	{
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-10", "-", "-");
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "20", "-");
+	}
+
+	else if(l == 'd')
+	{
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-10", "-", "-");
+		AddCommand("move", "-", "-10", "-");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "20", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "-", "-");
+	}
+
+	else if(l == 'e')
 	{
 		AddCommand("move", "-", "-", "-10");
 		AddCommand("move", "-", "-20", "-");
 		AddCommand("move", "10", "-", "-");
 		AddCommand("move", "-", "-", "10");
-		AddCommand("move", "2", "20", "-");
+		AddCommand("move", "-10", "10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-10", "10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "-", "-");
+	}
+
+	else if(l == 'h')
+	{
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-", "10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-", "-10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "20", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "-", "-");
+	}
+
+	else if(l == 'l')
+	{
+		AddCommand("move", "-", "-", "-10");		// moving down to start writing
+
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "10", "-", "-");
+
+		AddCommand("move", "-", "-", "10");			// moving up to stop writing
+		AddCommand("move", "5", "20", "-");			// relocating to a new letter
+	}
+
+	else if(l == 'o')
+	{
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-10", "-", "-");
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "20", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "-", "-");
+	}
+
+	else if(l == 'w')
+	{
+		AddCommand("move", "-", "-10", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "-10", "-");
+		AddCommand("move", "10", "-", "-");
+
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "-5", "-", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "10", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "-10", "-");
+		AddCommand("move", "-", "-", "-10");
+
+		AddCommand("move", "-", "10", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "10", "-");
+	}
+
+	else if(l == 'r')
+	{
+		AddCommand("move", "-", "-20", "-");
+		AddCommand("move", "-", "-", "-10");
+		AddCommand("move", "-", "10", "-");
+		AddCommand("move", "10", "-", "-");
+		AddCommand("move", "-", "-", "10");
+		AddCommand("move", "5", "10", "-");
+	}
+
+	else if (l == '-')		// for making a space
+	{
+		AddCommand("move", "10", "-", "-");
 	}
 
 	AddCommand("absolute");
