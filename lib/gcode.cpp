@@ -66,14 +66,9 @@ void DrawLetter(char l)
 	AddCommand("relative");
 
 	// Starting point of the letter is in the top left corner
-	// All the letters are 20x10 mm in size
-	// Spacing between letters is added automatically (5mm)
+	// All the letters are 10x5mm in size
+	// Spacing between letters is added automatically (2.5mm)
 	// This code assumes that z is 10mm up before running
-	// x is left-right
-	// y is up-down
-
-	// LETTERS TO ADD:
-	// FGHIJKLMNOPQRSUVWXYZ
 
 	if(l == 'a')
 	{
@@ -125,6 +120,25 @@ void DrawLetter(char l)
 		DrawSegment(0);
 	}
 
+	else if(l == 'f')
+	{	
+		DrawSegment(1);
+		DrawSegment(6);
+		DrawSegment(7);
+		DrawSegment(5);
+		DrawSegment(0);
+	}
+
+	else if(l == 'g')
+	{
+		DrawSegment(1);
+		DrawSegment(6);
+		DrawSegment(5);
+		DrawSegment(4);
+		DrawSegment(3);
+		DrawSegment(0);
+	}
+
 	else if(l == 'h')
 	{
 		DrawSegment(6);
@@ -134,10 +148,48 @@ void DrawLetter(char l)
 		DrawSegment(0);
 	}
 
-	else if(l == 'l')
+	else if(l == 'i')
+	{
+		DrawSegment(5);
+		DrawSegment(0);
+	}
+
+	else if(l == 'j')
+	{
+		DrawSegment(3);
+		DrawSegment(4);
+		DrawSegment(0);
+	}
+
+	else if(l == 'k')
 	{
 		DrawSegment(6);
 		DrawSegment(5);
+		DrawSegment(7);
+		DrawSegment(4);
+		DrawSegment(0);
+	}
+
+	else if(l == 'l')
+	{
+		DrawSegment(5);
+		DrawSegment(4);
+		DrawSegment(0);
+	}
+
+	else if(l == 'm')
+	{
+		DrawSegment(1);
+		DrawSegment(5);
+		DrawSegment(3);
+		DrawSegment(0);
+	}
+
+	else if(l == 'n')
+	{
+		DrawSegment(5);
+		DrawSegment(7);
+		DrawSegment(3);
 		DrawSegment(0);
 	}
 
@@ -150,11 +202,23 @@ void DrawLetter(char l)
 		DrawSegment(0);
 	}
 
-	else if(l == 'w')
+	else if(l == 'p')
 	{
-		DrawSegment(3);
-		DrawSegment(4);
+		DrawSegment(1);
+		DrawSegment(2);
+		DrawSegment(6);
+		DrawSegment(7);
 		DrawSegment(5);
+		DrawSegment(0);
+	}
+
+	else if(l == 'q')
+	{
+		DrawSegment(1);
+		DrawSegment(2);
+		DrawSegment(6);
+		DrawSegment(7);
+		DrawSegment(3);
 		DrawSegment(0);
 	}
 
@@ -162,6 +226,78 @@ void DrawLetter(char l)
 	{
 		DrawSegment(5);
 		DrawSegment(7);
+		DrawSegment(0);
+	}
+
+	else if(l == 's')
+	{
+		DrawSegment(1);
+		DrawSegment(6);
+		DrawSegment(7);
+		DrawSegment(3);
+		DrawSegment(4);
+		DrawSegment(0);
+	}
+
+	else if(l == 't')
+	{
+		DrawSegment(2);
+		DrawSegment(3);
+		DrawSegment(7);
+		DrawSegment(0);
+	}
+
+	else if(l == 'u')
+	{
+		DrawSegment(6);
+		DrawSegment(5);
+		DrawSegment(4);
+		DrawSegment(3);
+		DrawSegment(2);
+		DrawSegment(0);
+	}
+
+	else if(l == 'v')
+	{
+		DrawSegment(5);
+		DrawSegment(4);
+		DrawSegment(3);
+		DrawSegment(0);
+	}
+
+	else if(l == 'w')
+	{
+		DrawSegment(6);
+		DrawSegment(2);
+		DrawSegment(4);
+		DrawSegment(0);
+	}
+
+	else if(l == 'x')
+	{
+		DrawSegment(1);
+		DrawSegment(7);
+		DrawSegment(4);
+		DrawSegment(0);
+	}
+
+	else if(l == 'y')
+	{
+		DrawSegment(6);
+		DrawSegment(7);
+		DrawSegment(2);
+		DrawSegment(3);
+		DrawSegment(4);
+		DrawSegment(0);
+	}
+
+	else if(l == 'z')
+	{
+		DrawSegment(1);
+		DrawSegment(2);
+		DrawSegment(7);
+		DrawSegment(5);
+		DrawSegment(4);
 		DrawSegment(0);
 	}
 

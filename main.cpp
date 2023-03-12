@@ -19,7 +19,7 @@ int main()
 
 void Greeting()												// Greets the user, shows current version etc
 {
-	string version = "alpha 0.1";
+	string version = "alpha 0.2";
 	cout << "You are using 3D Printer Draw, version " << version << endl;
 	cout << "Type \"-help\" for available commands" << endl;
 }
@@ -52,13 +52,16 @@ void CommandLine()											// For command input
 			cout << "This is the list of available commands: " << endl;
 			cout << "-exit			Exits the program" << endl;
 			cout << "-help			Display available commands" << endl;
-			cout << "-testfile		Creating a debug file" << endl;
+			cout << "-testfile		Creating a debug file with starting commands" << endl;
+			cout << "-l 			Adding a letter to a testfile" << endl;
+			cout << "-m \"text\"		Adds a message to a testfile" << endl;
 		}
 
 		// Making a .gcode file for test purposes
 		else if(s == "-testfile")
 		{
 			cout << "Generating a testfile..." << endl;
+
 			AddCommand("home");
 			AddCommand("absolute");
 			AddCommand("move", "-", "-", "10");
@@ -67,10 +70,25 @@ void CommandLine()											// For command input
 			cout << "Generating complete!" << endl;
 		}
 
-		else if(s.substr(0, 7) == "-letter")
+		else if(s.substr(0, 2) == "-l")
 		{
-			DrawLetter(s[8]);
+			DrawLetter(s[3]);
 			cout << "Written letter " << s.substr(8, 1) << endl;
+		}
+
+		else if(s.substr(0, 2) == "-m")
+		{
+			int pos = 4;				// Current character
+			string message = "";
+
+			while(s[pos] != '"')
+			{
+				DrawLetter(s[pos]);
+				message += s[pos];
+				pos++;
+			}
+
+			cout << "Written message: " << message << endl;
 		}
 	}
 }
